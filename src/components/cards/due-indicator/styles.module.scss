@@ -1,0 +1,42 @@
+.main_wrapper_red,
+.main_wrapper_yellow,
+.main_wrapper_green,
+.main_wrapper_white {
+	@apply flex mr-auto my-auto p-[2px] py-1 rounded cursor-pointer;
+
+	.due_date {
+		@apply text-xs pr-1 pl-[2px];
+	}
+
+	.check_box {
+		@apply hidden;
+	}
+
+	.watch_icon {
+		@apply flex my-auto;
+
+		font-size: medium;
+	}
+	&:hover {
+		.check_box {
+			@apply flex accent-white cursor-pointer mx-[2px];
+		}
+
+		.watch_icon {
+			@apply hidden;
+		}
+	}
+}
+
+.main_wrapper_red {
+	@apply bg-[#EB5A46] text-white;
+}
+.main_wrapper_yellow {
+	@apply bg-[#f2d600] text-white;
+}
+.main_wrapper_green {
+	@apply bg-[#61bd4f] text-white;
+}
+.main_wrapper_white {
+	@apply hover:bg-[#00000016] text-[#5e6c84];
+}

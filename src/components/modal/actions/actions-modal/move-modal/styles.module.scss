@@ -1,0 +1,70 @@
+.container {
+	@apply flex-col absolute -ml-32 lg:ml-0 w-72 -mt-80  bg-white my-2 rounded-sm 
+	shadow-md shadow-slate-500/50 z-20 text-[#5e6c84] px-4 h-fit;
+
+	.title {
+		@apply flex justify-center h-10 items-center border-b-[1px] border-[#091e4221];
+
+		.x_icon {
+			@apply absolute right-3 top-3 cursor-pointer;
+		}
+	}
+
+	.suggested_container {
+		@apply text-base mt-3;
+
+		.title_suggested {
+			@apply text-sm font-semibold;
+		}
+
+		.sparkles_icon {
+			@apply mr-2;
+		}
+
+		.button_suggested {
+			@apply flex mt-3 hover:bg-[#091e4214] bg-[#091e420a] cursor-pointer items-center pl-4 h-8 rounded;
+
+			.icon_arrow {
+				@apply mr-4;
+			}
+		}
+	}
+
+	.select_destination {
+		@apply text-base mt-5 border-collapse;
+
+		.select_destination_title {
+			@apply text-sm font-semibold;
+		}
+
+		.select_button_container {
+			@apply flex mt-3 gap-2;
+
+			.list_button,
+			.position_button {
+				@apply flex pt-1 h-12 rounded;
+
+				> span {
+					@apply flex text-xs pt-1 absolute cursor-pointer pl-2;
+				}
+
+				.select_button {
+					@apply h-12 appearance-none outline-none rounded hover:bg-[#091e4214] bg-[#091e420a] 
+					cursor-pointer w-full pl-2 pt-4 z-10 overflow-ellipsis;
+				}
+			}
+
+			.list_button {
+				@apply w-[70%];
+			}
+
+			.position_button {
+				@apply w-[30%];
+			}
+		}
+		.move_button {
+			@apply flex mt-4 rounded w-fit bg-[#0079bf] justify-center leading-5 py-2 px-6 text-white 
+			cursor-pointer hover:bg-[#026aa7] mb-4;
+		}
+	}
+}

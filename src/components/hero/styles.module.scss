@@ -1,0 +1,23 @@
+.main_wrapper_bg {
+	@apply min-w-full min-h-screen bg-cover bg-center bg-[url('/assets/lake_nature.png')] overflow-y-hidden;
+
+	.main_wrapper {
+		@apply flex gap-3 px-3;
+
+		.list {
+			@apply mt-5 h-10 bg-[#ebecf0] min-w-[17rem] rounded;
+		}
+		.popup_and_button {
+			@apply pr-3;
+
+			.list_button {
+				@apply flex items-center gap-2 min-w-[17rem] text-white text-lg cursor-pointer rounded
+			bg-[#ffffff3d] h-10 mt-[68px];
+
+				.plus_icon {
+					@apply ml-4 mb-2 text-4xl;
+				}
+			}
+		}
+	}
+}

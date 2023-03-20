@@ -1,0 +1,21 @@
+.main_wrapper {
+	@apply flex-col mt-[68px] h-20 bg-[#ebecf0] rounded;
+
+	input {
+		@apply rounded min-w-[17rem] text-[#172b4d] m-1 p-1 border-[#0079bf];
+	}
+	input:focus {
+		@apply border-[2px] outline-none;
+	}
+
+	.button_container {
+		@apply flex gap-2 ml-1;
+
+		.add_button {
+			@apply cursor-pointer bg-[#0079bf] p-1 px-2 text-white rounded;
+		}
+		.x_button {
+			@apply cursor-pointer text-xl px-2 font-semibold text-[#42526e];
+		}
+	}
+}

@@ -1,0 +1,26 @@
+.member_overlay {
+  @apply flex-col absolute -ml-32 lg:ml-0 w-72 bg-white my-2 rounded-sm shadow-md shadow-slate-500/50  text-[#5e6c84] px-4;
+
+  .member_container {
+    @apply grid grid-cols-12 border-b-2 h-8 mt-2;
+
+    .member {
+      @apply col-span-11 flex justify-center;
+    }
+    .icon{
+      @apply cursor-pointer;
+    }
+  }
+  .input_user{
+    @apply  w-full p-2 mt-4  border-[#dfe1e6] bg-[#091e420a] border-2 rounded;
+  }
+  .board{
+    @apply text-[0.9rem] font-medium mt-2;
+  }
+  .member_user {
+    @apply flex items-center my-2 bg-[#091e420a] cursor-pointer h-10 rounded;
+    .avatar{
+      @apply  flex items-center justify-center w-8 h-8 rounded-3xl  bg-gray-900 text-slate-100 mx-2;
+    }
+  }
+}

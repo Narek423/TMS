@@ -1,0 +1,17 @@
+.button {
+	@apply flex hover:bg-[#091e4214] text-[#172b4d] text-sm font-normal bg-[#091e420a] 
+	h-8 cursor-pointer rounded items-center pl-3 mt-2;
+
+	.reload_icon {
+		@apply mr-2;
+	}
+}
+
+.delete_button {
+	@apply flex hover:bg-[#933b27] text-white text-sm font-normal bg-[#b04632] 
+	h-8 cursor-pointer rounded items-center pl-3 mt-2;
+
+	.delete_icon {
+		@apply mr-2 font-bold;
+	}
+}

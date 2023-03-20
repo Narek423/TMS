@@ -1,0 +1,36 @@
+.container {
+	@apply flex-col absolute w-72 h-56 bg-white my-2 rounded-sm shadow-md shadow-slate-500/50 z-10 text-[#5e6c84] px-4;
+
+	.title {
+		@apply flex justify-center h-10 items-center border-b-[1px] border-[#091e4221];
+
+		.x_icon {
+			@apply absolute right-3 top-3 cursor-pointer;
+		}
+	}
+	.select_button_container {
+		@apply flex flex-col mt-3 gap-2;
+
+		.list_button,
+		.position_button {
+			@apply flex pt-1 h-12 rounded;
+
+			> span {
+				@apply flex text-xs pt-1 absolute cursor-pointer pl-2;
+			}
+
+			.select_button_position,
+			.column_name {
+				@apply h-12 appearance-none outline-none rounded  bg-[#091e420a] 
+					 w-full pl-2 pt-5 z-10 overflow-ellipsis;
+			}
+
+			.select_button_position {
+				@apply hover:bg-[#091e4214] cursor-pointer;
+			}
+		}
+	}
+	.move_button {
+		@apply flex mt-4 rounded w-fit bg-[#0079bf] justify-center leading-5 py-2 px-6 text-white cursor-pointer hover:bg-[#026aa7];
+	}
+}

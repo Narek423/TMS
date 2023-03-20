@@ -1,0 +1,36 @@
+.title {
+	@apply flex  items-center;
+	.title_icon {
+		@apply text-[1.7rem] text-[#42526e];
+	}
+	.checklist_title {
+		@apply flex justify-between items-center w-full;
+		.title_text {
+			@apply ml-5;
+		}
+		.title_delete {
+			@apply flex items-center justify-center bg-[#091e420a] hover:bg-[#091e4214] cursor-pointer mt-2 rounded h-8 w-20;
+			.title_delete_btn {
+				@apply text-[0.9rem]  text-[#42526e];
+			}
+		}
+	}
+}
+.checklist_progress {
+	@apply flex items-center w-full mt-2;
+	.percent {
+		@apply text-[0.9rem] text-[#42526e] ml-2;
+	}
+	.percent_line {
+		@apply w-full h-2  bg-[#091e4214] ml-5 rounded-full;
+        .percent_line_div{
+            @apply h-2 bg-[#5ba4cf] rounded;
+        }
+	}
+}
+.add_item {
+	@apply flex items-center justify-center bg-[#091e420a] hover:bg-[#091e4214] cursor-pointer rounded h-8 w-24 ml-12 mt-3 mb-10;
+	.add_item_btn {
+		@apply text-[0.9rem]  text-[#42526e];
+	}
+}

@@ -1,0 +1,7 @@
+.dnd-container {
+	@apply flex gap-3 mt-12;
+
+	.columnWrapper {
+		@apply flex flex-col gap-y-2 px-2 pb-2 bg-[#ebecf0] min-w-[17rem] rounded mt-5 h-fit;
+	}
+}

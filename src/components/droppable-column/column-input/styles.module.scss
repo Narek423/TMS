@@ -1,0 +1,10 @@
+.main_wrapper {
+	@apply flex bg-[#ebecf0] rounded -my-1;
+
+	input {
+		@apply rounded w-[235px] text-[#172b4d] ml-1 p-1 border-[#0079bf];
+	}
+	input:focus {
+		@apply border-[2px] outline-none;
+	}
+}

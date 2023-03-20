@@ -1,0 +1,19 @@
+.main_wrapper {
+	@apply flex fixed min-w-full h-12 bg-[#0c65386a] justify-between;
+
+	.logo_wrapper {
+		@apply flex items-center ml-2;
+
+		.logo_name {
+			@apply text-2xl font-semibold text-white font-rubik ml-3;
+		}
+
+		.img_logo {
+			@apply mt-1;
+		}
+	}
+
+	.avatar {
+		@apply flex rounded-full mr-3 py-[0.2rem];
+	}
+}

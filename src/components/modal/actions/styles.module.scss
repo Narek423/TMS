@@ -1,0 +1,16 @@
+.main_wrapper {
+	@apply mt-5;
+
+	> h3 {
+		@apply text-[#5e6c84] text-xs font-semibold mb-[-0.25rem] mt-4;
+	}
+
+	.button {
+		@apply flex hover:bg-[#091e4214] text-[#172b4d] text-sm font-normal bg-[#091e420a] 
+		h-8 cursor-pointer rounded items-center pl-3 mt-2;
+	}
+
+	.icon {
+		@apply mr-2;
+	}
+}

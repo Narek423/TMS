@@ -1,0 +1,48 @@
+.label_overlay {
+    @apply w-72  fixed bg-white my-2 rounded-sm shadow-md shadow-slate-500/50 z-10 p-2;
+  
+    .label_container {
+      @apply grid grid-cols-12 border-b-2 h-8;
+  
+      .label {
+        @apply col-span-11 flex justify-center ;
+      }
+      .icon{
+        @apply cursor-pointer;
+      }
+      
+    }
+    .checked{
+        @apply flex items-center justify-center bg-[#091e420a] w-full h-16 my-3;
+        .cloud{
+          @apply flex items-center w-4/5 h-8 ;
+          .round_color{
+            @apply rounded-full w-4 h-4 ml-4 ;
+          }
+        }
+    }
+    .input_title{
+      @apply border-2 w-full h-10 my-2;
+    }
+    .add_new_color{
+       @apply grid grid-cols-5 gap-3;
+       .color_newlabel {
+        @apply  h-6 rounded;
+      }
+    }
+    .remove_color{
+      @apply flex items-center justify-center w-full h-8 rounded bg-[#091e420a] hover:bg-[#091e4214] cursor-pointer mt-4;
+      p{
+        @apply text-gray-700;
+      }
+    }
+    .line{
+      @apply w-full h-0.5 bg-[#091e420a] my-4;
+    }
+    .create_btn{
+      @apply flex justify-start;
+      button{
+        @apply bg-[#0079bf] w-16 h-8 rounded text-white
+      }
+    }
+}

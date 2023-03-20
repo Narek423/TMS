@@ -1,0 +1,6 @@
+.avatar_parent{
+    @apply flex;
+    .avatar{
+      @apply flex items-center justify-center w-8 h-8 rounded-3xl  bg-gray-900 text-slate-100 mr-1;
+    }
+  }

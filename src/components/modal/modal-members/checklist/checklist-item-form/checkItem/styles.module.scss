@@ -1,0 +1,12 @@
+.container{
+    @apply flex items-center hover:bg-[#091e420a] h-8 w-full;
+    .input{
+        @apply ml-2 cursor-pointer;
+    }
+    .title{
+        @apply flex justify-between items-center  ml-6 text-[0.9rem] text-[#42526e] w-full;
+    }
+    .icon{
+        @apply  text-[1.3rem] text-[#42526e] mr-2 cursor-pointer;
+    }
+}

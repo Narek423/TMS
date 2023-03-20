@@ -1,0 +1,5 @@
+.main_wrapper {
+	.pontsIcons {
+		@apply flex  ml-auto rounded cursor-pointer hover:bg-[#6b778c99] -z-20;
+	}
+}

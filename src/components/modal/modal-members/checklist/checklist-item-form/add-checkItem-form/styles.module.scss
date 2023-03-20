@@ -1,0 +1,13 @@
+.container{
+    @apply ml-12 my-4;
+    .textarea{
+        @apply w-full border-[#0079bf] border-2 outline-none;
+    }
+   .add{
+    @apply w-12 h-8 bg-[#0079bf] text-white rounded hover:bg-[#22658c];
+   }
+   .cencel{
+    @apply ml-1 w-20 h-8 hover:bg-[#091e4214] rounded;
+   }
+    
+}

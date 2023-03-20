@@ -1,0 +1,6 @@
+.item {
+	@apply h-auto w-64 bg-white hover:bg-slate-200 gap-5 shadow-md shadow-slate-500/50 rounded-sm p-2;
+	.avatar_comp {
+		@apply flex justify-end;
+	}
+}

@@ -1,0 +1,31 @@
+.container {
+	@apply flex-col absolute w-72 h-52 bg-white my-2 rounded-sm shadow-md shadow-slate-500/50 z-10 text-[#5e6c84] px-4;
+
+	.title {
+		@apply flex justify-center h-10 items-center border-b-[1px] border-[#091e4221];
+
+		.x_icon {
+			@apply absolute right-3 top-3 cursor-pointer;
+		}
+	}
+	.copy_container {
+		@apply flex flex-col mt-3 gap-2;
+
+		.input_container {
+			@apply text-base;
+
+			.title_input {
+				@apply text-sm font-semibold;
+			}
+
+			.copy_input {
+				@apply flex text-[#172b4d] text-sm bg-[#fafbfc] rounded appearance-none shadow-[inset_0_0_0_2px_rgb(223,225,230)]
+				mt-1 h-16 pt-2 w-full outline-none pl-3 hover:bg-[#ebecf0] focus:shadow-[inset_0_0_0_2px_rgb(0,121,191)] focus:bg-white
+				resize-none;
+			}
+		}
+	}
+	.create_button {
+		@apply flex mt-4 rounded w-fit bg-[#0079bf] justify-center leading-5 py-2 px-6 text-white cursor-pointer hover:bg-[#026aa7];
+	}
+}

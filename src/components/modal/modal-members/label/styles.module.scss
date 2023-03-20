@@ -1,0 +1,50 @@
+.label_overlay {
+    @apply flex-col absolute -ml-32 lg:ml-0 w-72 -mt-[10rem]  bg-white my-2 rounded-sm shadow-md shadow-slate-500/50 z-10 text-[#5e6c84] px-4;
+    ;
+  
+    .label_container {
+      @apply grid grid-cols-12 border-b-2 h-8 mt-2;
+      .label {
+        @apply col-span-11 flex justify-center ;
+      }
+      .icon{
+        @apply cursor-pointer;
+      }
+    }
+    .input_color{
+      @apply border-2 w-full p-2 mt-4;
+    }
+    .ul_label{
+      @apply  text-gray-700 text-sm my-2;
+    }
+    .li{
+      @apply flex m-1;
+      .label_color{
+        @apply flex items-center;
+        .checkbox{
+          @apply mr-2 w-5 h-5 cursor-pointer;
+        } 
+        .color_edit{
+          @apply flex;
+          .background{
+            @apply  flex items-center w-44 h-8 cursor-pointer;
+            .round_color{
+              @apply rounded-full w-4 h-4 ml-4;
+            }
+          }
+        }
+      }
+    }
+    .button_color{
+      @apply flex justify-center items-center ml-2 w-10 hover:bg-[#091e4214] cursor-pointer;
+    }
+    .create_a_new_label{
+      @apply flex items-center justify-center w-full h-8 rounded bg-[#091e420a] hover:bg-[#091e4214] cursor-pointer mt-4;
+      p{
+        @apply text-gray-700;
+      }
+    }
+    .underline{
+      @apply w-full h-0.5 bg-[#091e4214] my-4;
+    }
+  }

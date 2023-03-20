@@ -1,0 +1,80 @@
+.overlay {
+	@apply h-full w-full bg-opacity-20 fixed top-0 left-0 flex justify-center bg-black overflow-y-auto py-14;
+
+	.modal_container {
+		@apply flex flex-col h-fit p-6 rounded-sm bg-slate-50 my-auto;
+
+		.move_modal_link {
+			@apply flex gap-2 text-[#5e6c84] text-sm font-normal leading-5 mr-1 mb-2;
+
+			.move_modal_position {
+				@apply absolute mt-[21.6rem] ml-[10.5rem] lg:ml-10;
+			}
+
+			> div {
+				@apply cursor-pointer underline;
+			}
+		}
+
+		.modal_head {
+			@apply flex justify-between cursor-pointer;
+
+			.title_input {
+				@apply bg-slate-50;
+			}
+
+			.close_modal {
+				@apply text-lg;
+			}
+		}
+		.avatar_member {
+			@apply pl-12 flex;
+			.avatar_member_title {
+				@apply text-sm  text-gray-700;
+			}
+			.avatar {
+				@apply mt-2 mb-6;
+			}
+			.colors {
+				@apply ml-4;
+				.priority_member_title {
+					@apply text-sm  text-gray-700;
+				}
+			}
+		}
+
+		.modal_col {
+			@apply flex;
+
+			.description {
+				@apply pr-2;
+
+				.description_icon {
+					@apply mr-6 text-2xl  text-gray-700 w-6;
+				}
+			}
+			.activity_input {
+				@apply w-96 h-8 hover:bg-slate-200 mt-6 mb-10 ml-12 shadow-md shadow-slate-500/50 rounded-sm;
+			}
+
+			.add_to_card {
+				@apply p-2;
+
+				.add_to_card_text {
+					@apply text-xs text-slate-600;
+				}
+
+				.member {
+					@apply flex items-center bg-[#091e420a] hover:bg-[#091e4214] cursor-pointer mt-2 rounded h-8 w-36;
+					.icon_member{
+						@apply text-[1.1rem]  text-[#42526e] mx-2;
+					}
+					.btn_member{
+						@apply text-[0.9rem]  text-[#42526e];
+					}
+					
+				}
+			}
+		}
+	}
+}

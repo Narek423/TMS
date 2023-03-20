@@ -1,0 +1,23 @@
+.priority_parent{
+    @apply flex flex-wrap gap-1;
+    .label_wrapper{
+       @apply h-4;
+       .label{
+          @apply h-2 min-w-[3rem] rounded-full flex items-center gap-x-1 transition-all duration-150;
+
+          &.expanded{
+            @apply p-1 h-4 rounded;
+          }
+          .dot{
+            @apply w-2 h-2 rounded-full;
+          }
+          .text{
+            @apply text-xs;
+          }
+       }
+    }
+
+}
+
+
+

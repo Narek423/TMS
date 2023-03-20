@@ -1,0 +1,19 @@
+.title_container {
+	@apply flex my-2;
+
+	.pointsIcons {
+		@apply flex ml-auto;
+	}
+
+	.title {
+		@apply text-lg ml-2 w-[235px];
+	}
+}
+
+.column {
+	@apply flex flex-col gap-y-2 max-h-[65vh] overflow-y-auto overflow-x-hidden;
+
+	.colmBody {
+		@apply flex flex-col gap-y-2 px-1;
+	}
+}
