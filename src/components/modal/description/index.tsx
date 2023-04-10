@@ -27,7 +27,7 @@ const Description: FC<DescriptionProps> = ({ item, columnId }) => {
 
     textarea?.focus();
     textarea?.setSelectionRange(textarea.value.length, textarea.value.length);
-  });
+  }, []);
 
   const onClickAndKeyPressHandler = (e: any) => {
     if (e.key === 'Escape' || e.type === 'click') {
