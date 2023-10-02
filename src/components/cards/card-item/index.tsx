@@ -43,7 +43,7 @@ const CardItem: FC<CardItemProps> = ({ item, index, columnId }) => {
             {item.task}
 
             <div className={styles.avatar_comp}>
-              {item.date.title && (
+              {item.date?.title && (
                 <DueIndicator item={item} columnId={columnId} />
               )}
               <Avatar task={item} />

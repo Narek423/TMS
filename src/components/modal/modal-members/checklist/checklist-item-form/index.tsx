@@ -16,7 +16,7 @@ const ChecklistItem: FC<ChecklistItemProps> = ({
 }) => {
   return (
     <div>
-      {task.checklists.map(checklist => {
+      {task.checklists?.map(checklist => {
         return (
           <div key={checklist.id}>
             <ChecklistTask
